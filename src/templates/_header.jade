@@ -1,0 +1,54 @@
+header.header.bg-color
+	.header-wrap
+		.container
+			.header-logo
+				a.logo-link-wrap.hidden-xs(href="#")
+					.logo-img
+					.logo-title IpNinja
+				.logo-discr.hidden-xs.hidden-sm Anonymity<br>&amp; Security
+
+			nav.header-menu.hidden-sm.hidden-xs
+				ul
+					li
+						a(href="#") Pricing
+					li
+						a(href="#") Help
+					li
+						a(href="#") Servers
+					li
+						a(href="#") Terms
+
+			nav.toogle-nav.hidden-md.hidden-lg
+				button.toogle-menu(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+					i.fa.fa-bars
+				ul.dropdown-menu.dropdown-menu-left
+					li
+						a(href="#") Pricing
+					li
+						a(href="#") Help
+					li
+						a(href="#") Servers
+					li
+						a(href="#") Terms
+
+			.lang-wrap
+				span.text-lang English
+				img.flag-lang(src="img/english.png", alt="flag")
+				.group-lang
+					button.dropdown-language(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+						span.crt
+					ul.dropdown-menu.dropdown-menu-right
+						li
+							a(href="#")
+								span.country English
+								img.flag(src="img/english.png", alt="flag")
+						li
+							a(href="#")
+								span.country Germany
+								img.flag(src="img/germany.png", alt="flag")
+						li
+							a(href="#")
+								span.country Russia
+								img.flag(src="img/russia.png", alt="flag")
+
+			button.login(type="button") Log in

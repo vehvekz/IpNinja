@@ -1,0 +1,45 @@
+section.content
+	.container
+		h1.content-title Proxy
+		.content-discr
+			span.discr Proxy discription one two three four five six
+		.content-wrap
+			.row
+				.col-md-8
+					.connect-through
+						form(action="#", name="connect")
+							label.settings Connect through
+							.input-set-wrap
+								img.flag.in-flag(src="img/mexico.png", alt="flag")
+								input.input-settings(type="text", placeholder="Mexico")
+								.group-settings
+									button.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+										span.crt
+									ul.dropdown-menu.dropdown-menu-right
+										li
+											a(href="#")
+												span.country Mexico
+												img.flag(src="img/mexico.png", alt="flag")
+					.url
+						form(action="#")
+							label.settings url
+							input.input-settings.traffic(type="text", placeholder="Mexico")
+
+				.col-md-4
+					.speed
+						form(action="#", name="connect")
+							label.settings Speed
+							.input-set-wrap
+								input.input-settings.tariff(type="text", placeholder="Standart") 
+								.group-settings
+									button.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+										span.crt
+									ul.dropdown-menu.dropdown-menu-right
+										li
+											a(href="#") Standart
+						
+					.submit
+						button.go(type="button") Go!
+
+
+
