@@ -7,13 +7,21 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+	.input-settings {
+		width: 308px;
+	}
+	.input-settings.traffic {
+		width: 510px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.table-wrap{
 		width: 95%
+	}
+	.input-settings.traffic {
+		width: 580px;
 	}
 }
 
@@ -24,6 +32,15 @@
 	}
 	.login-wrap2 .social-list{
 		margin: 10px 0px 10px 0px
+	}
+	.content-wrap {
+	padding: 47px 20px 6px;
+	}
+	.input-settings {
+		width: 410px;
+	}
+	.input-settings.traffic {
+		width: 408px;
 	}
 }
 
@@ -38,6 +55,15 @@
 	}
 	.login-wrap2 .email-login{
 		width: 100%
+	}
+	.content-wrap {
+		padding: 47px 10px 6px;
+	}
+	.input-settings {
+		width: 270px;
+	}
+	.input-settings.traffic {
+		width: 270px;
 	}
 }
 
