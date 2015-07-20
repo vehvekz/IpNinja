@@ -35,7 +35,7 @@ var path = {
 	watch: { 
 		html: 'src/**/*.jade',
 		js: 'src/js/**/*.js',
-		style: 'src/style/**/*.sass',
+		style: ['src/style/**/*.sass', 'src/style/**/*.scss'],
 		img: 'src/img/**/*.*',
 		fonts: 'src/fonts/**/*.*'
 	},
@@ -79,7 +79,7 @@ gulp.task('js:build', function () {
 // Style build
 gulp.task('style:build', function () {
 	gulp.src(path.src.style)
-		// .pipe(sourcemaps.init())
+		.pipe(sourcemaps.init())
 		.pipe(sass({
 			indentedSyntax: true,
 			errLogToConsole: true
@@ -89,7 +89,7 @@ gulp.task('style:build', function () {
 			cascade: true
 		}))
 		.pipe(cssmin())
-		// .pipe(sourcemaps.write())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(reload({stream: true}));
 });
